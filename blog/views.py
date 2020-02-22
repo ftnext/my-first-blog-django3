@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
-from .forms import PostForm
+from .forms import CommentForm, PostForm
 from .models import Post
 
 
@@ -12,7 +12,8 @@ def post_list(request):
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+    form = CommentForm()
+    return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
 
 
 @login_required
