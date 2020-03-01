@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ftnext" />
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+    <meta property="og:title" content="Django Girls Blog (PyCon mini 静岡 デモアプリ)" />
+    <meta property="og:description" content="トークを聞きながら触れるように作ったデモアプリです。See https://shizuoka.pycon.jp/session/ftnext/ （デモアプリの性質上、断りなく停止する場合があります）" />
   </head>
   <body>
     <div class="page-header">
