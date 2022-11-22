@@ -1,0 +1,88 @@
+
+<html>
+  <head>
+    <title>Django Girls Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ftnext" />
+    <meta property="og:url" content="https://nikkie-pycon-shizu-django-blog.herokuapp.com/post/1/" />
+    <meta property="og:title" content="Django Girls Blog (PyCon mini 静岡 デモアプリ)" />
+    <meta property="og:description" content="トークを聞きながら触れるように作ったデモアプリです。See https://shizuoka.pycon.jp/session/ftnext/ （デモアプリの性質上、断りなく停止する場合があります）" />
+  </head>
+  <body>
+    <div class="page-header">
+      
+        <a href="/post/new/" class="top-menu">
+          <span class="glyphicon glyphicon-plus"></span></a>
+        <p class="top-menu">Hello ftnext 
+          <small>(<a href="/accounts/logout/">Log out</a>)</small></p>
+      
+      <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          
+  <div class="post">
+    
+      <div class="date">
+        2020年2月22日20:35
+      </div>
+    
+    
+      <a class="btn btn-default" href="/post/1/edit/">
+        <span class="glyphicon glyphicon-pencil"></span></a>
+    
+    <h2>deployed on heroku!!</h2>
+    <p>herokuにデプロイできました<br><br>Django Girls Tutorial Extensionsをベースにwhitenoiseのバージョンアップ対応を実施してデプロイ<br>https://tutorial-extensions.djangogirls.org/ja/heroku/</p>
+  </div>
+  <hr>
+  <h2>Comment</h2>
+  <form method="POST" class="post-form"
+      action="/post/1/comment/"><input type="hidden" name="csrfmiddlewaretoken" value="rbKTjq17gKTlHnLcQe7RWhoGvkMi6ghlj0I8gkqfMU4GAdyfa0PD9t6YYnsr1dHe">
+    <p><label for="id_author">Author:</label> <input type="text" name="author" maxlength="50" required id="id_author"></p>
+<p><label for="id_text">Text:</label> <textarea name="text" cols="40" rows="10" required id="id_text">
+</textarea></p>
+    <button type="submit" class="save btn btn-default">コメントを追加する</button>
+  </form>
+  
+    <div class="comment">
+      <div class="date">2020年2月22日20:36</div>
+      <strong>nikkie</strong>
+      <p>Good Job 👍</p>
+    </div>
+  
+    <div class="comment">
+      <div class="date">2020年2月24日17:48</div>
+      <strong>nikkie</strong>
+      <p>PyCon mini 静岡発表練習中です</p>
+    </div>
+  
+    <div class="comment">
+      <div class="date">2020年2月25日10:07</div>
+      <strong>nikkie</strong>
+      <p>発表練習2回めです</p>
+    </div>
+  
+    <div class="comment">
+      <div class="date">2020年2月28日23:33</div>
+      <strong>nikkie</strong>
+      <p>直前発表練習です</p>
+    </div>
+  
+    <div class="comment">
+      <div class="date">2020年2月29日13:48</div>
+      <strong>nikkie</strong>
+      <p>発表なう</p>
+    </div>
+  
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
